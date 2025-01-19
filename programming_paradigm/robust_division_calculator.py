@@ -14,8 +14,8 @@ def safe_divide(numerator, denominator):
         # Attempt to perform division
         result = num / denom
         
-        # Format the result to avoid unnecessary trailing zeroes
-        return f"The result of the division is {result:g}"
+        # Format the result to always include one decimal place
+        return f"The result of the division is {result:.1f}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     except ValueError:
